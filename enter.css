@@ -1,0 +1,59 @@
+body 
+{
+   image-rendering:pixelated;
+	background-image: url("media/images/Mappyopening.webp");
+   background-repeat: no-repeat;
+	background-size: contain;
+   background-position:center;
+	background-attachment: fixed;
+	background-color:#000000;
+	color:#181818;
+	font-family: hack, monospace;
+	font-size:14px;
+	padding:0px;
+    line-height:1.25;
+    overflow:hidden;
+}
+
+  h1 {
+    color: rgba(255, 0, 0, 0.733)
+ } 
+ 
+ 
+ p {
+    color: rgb(0, 0, 0)
+ }
+
+  .intro {
+   color:#181818;
+    width:400px;
+    background-color:#f4f4f4;
+    padding:12px;
+    outline: 2px dashed #181818;
+    outline-offset:-4px;
+    margin:auto;
+    position:relative;
+  }
+
+  .container{
+   color: aqua;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 500px;
+   transform: translate(-50%,-50%);
+  }
+
+  .enterbutton {
+   font-size: 59px;
+   color:#f4f4f4;
+   position:relative;
+   text-align:center;
+   background-color:#181818;
+   width:270px;
+   margin:auto;
+   height:64px;
+   top:-6px;
+   letter-spacing:8px;
+   border: solid 2px #181818;
+  }
