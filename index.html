@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="icon" href=“icon.png">
+   <link rel="icon" href="media/images/mappy.png">
    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
    <title>Peyton S.</title>
 
@@ -23,7 +23,7 @@
   <!--current header-->
   <div class="flex adjust">
     <img src="media/images/mappy.png" class="icon" alt="logo">
-    <h1 class="bold">PSTROUP</h1>
+    <h1 class="bold" style="white-space: nowrap;">PEYTON S.</h1>
     <a href="brat.html"><img src="media/images/brat.webp" alt="secret zone" class="bratbutton"></a>
 </div>
 <!---->
@@ -31,7 +31,7 @@
 
 <!--Nav Start-->
 <div  x-data="{tab: 0}">
-  <nav class="tabs is-full">
+  <nav class="tabs is-full setverdana">
     <a x-on:click="tab = 0;" :class="{ 'active': tab == 0 }">About</a>
     <a x-on:click="tab = 1;" :class="{ 'active': tab == 1 }">Skills</a>
     <a x-on:click="tab = 2;" :class="{ 'active': tab == 2 }">Experience</a>
@@ -40,21 +40,29 @@
 
   
 <!--begin Tab 0-->
-    <div x-show="tab == 0" class="centertext">
+    <div x-show="tab == 0" class="centertext setverdana">
         <div class="row">
           <div class="col">
-              <h1>Me!</h1>
+              <h1>Hi! I'm Peyton</h1>
           </div>
         </div>
 
         <div class="row">
           <div class="col">
             <p>
-              This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. 
+               Your new favorite UX Designer and Arcade Connoisseur from Knoxville, TN! (Let me know if there's another one!)
             </p>
             <p>
-              Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. 
+              When I'm not spending time with my wonderful partner and zoo-worthy number of animals at home, you can usually find me running your local Fighting Game tournaments as "Scruffy City FGC," volunteering for the Tennessee Suicide Prevention Network, or gluing my eyes to some new piece of design technology.
             </p>
+
+            <p>After going back to school in 2020 in the middle of the Pandemic, I've recently graduated from the University of Tennessee Knoxville with a Degree in Information Science - UX Design Concentration as of December 2024.</p>
+
+            <p>During my time at UT, I've begun working both on campus for their Student Disability Services Center and with Intellitext to provide communication access to deaf and hard of hearing students in the college classroom setting, and remotely across the US and Canada in all levels of Academia!</p>
+
+            <p>I've also Created and Run what is now Tennessee's largest annual Fighting Game Tournament, KNOX-OUT! This event sees travel from hundreds of competitors across the SouthEast for titles like Street Fighter, Tekken, Mortal Kombat, etc. Arcade Culture runs through my veins, and with that means I place community building and providing memorable, accessible experiences at the forefront of everything I do.</p>
+
+            <H3 style="font-weight: bold; font-size: 18x; padding-top: 10px;">Let's make Great things together!</H3>
           </div>
           
             <div class="col">
@@ -66,7 +74,7 @@
 <!--end of Tab 0-->
 
 <!--Begin Tab 1-->
-    <div x-show="tab == 1" class="centertext">
+    <div x-show="tab == 1" class="centertext setverdana">
       <div class="row">
         <div class="col">
             <h1>Stuff I do and things I work with:</h1>
@@ -91,17 +99,19 @@
 
       <div class="row">
         <div class="col">
-          <img src="media/images/me2.jpg" class="projectpreviewimg">
+          <img src="media/images/me2.jpg" class="projectpreviewimg" style="margin-top: 10%;">
         </div>
 
-        <div class="col">
+        <div class="col" style="margin-top: 5%;">
           <p></p>
           <p>
-            lets make a list here of all the stuff I work with.
+            I love Making...Stuff!
           </p>
           <p>
-            This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. 
+            While the formal education is great, I've always been one to pick up a tool for the sake of learning a tool. Whether its App and Website Design, Art, Animation, Editing, or even building Circuit Boards, I love to create for others. As far as my field: I find that many UX designers tend to know their one design tool like the back of their hands...but that's it. The one tool.
           </p>
+
+          <p>If there's two qualities I always try to put forward first, it's Initiative, and Adaptability. My worst outcome is forgetting how to open the book and teach myself somethign new from the ground up. I live to learn as much as I live to create.</p>
         </div>
     </div>
     <!--end of About Row-->
@@ -109,7 +119,7 @@
 <!--end of tab 1-->
 
 <!--Begin Tab 2-->
-  <div x-show="tab == 2" class="centertext">
+  <div x-show="tab == 2" class="centertext setverdana">
 
     <!--Header-->
     <div class="row">
@@ -210,16 +220,16 @@
     <br>
           <div class="row">
             <div class="col">
-              <img src="media/images/mappy.png" class="projectpreviewimg">
+              <img src="media/images/LL/LLHome.png" class="flex adjust" style="width: 300px;">
             </div>
 
-            <div class="col">
-              <p></p>
+            <div class="col" style="margin-top: 5%; margin-right: 5%; font-size: larger;">
               <p>
-                This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  
+                <a href="LLcase.html" style="font-size: 24px;">Local Legend</a> is an app I designed and documented the creation of for my Capstone Project at the University of Tennessee Knoville.
               </p>
+
               <p>
-                This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  
+                 A companion app to the Tournament Bracket Creation and Management Site <a style="font-size: 24px;" href="https://www.start.gg/">Start.gg,</a> <a href="LLcase.html" style="font-size: 24px;">Local Legend</a> was designed to encourage new participation at our local in-person Fighting Game events, as well as further build and enrich our existing community through a Rivalalry system, Stat Tracking and Comparison, News alerts for upcoming events in our area, and more.
               </p>
             </div>
             <br>
@@ -243,35 +253,38 @@
           <h3>
             KNOX-OUT!!
           </h3>
-          <h4>Largest Annual Fighting Game Tournament in TN</h4>
+          <h4>Tennessee's Largest Annual Fighting Game Tournament Series</h4>
           <p>-------</p>
         </header>
       </div>
-    <br>
+<br>
       <div class="row">
-        <div class="col">
-          <p></p>
-          <p>
-            This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  
-          </p>
-          <p>
-            This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  
-          </p>
+        <div class="col is-center">
+          <img src="media/images/ko24.png" class="flex adjust" style="width: 500px;">
         </div>
-            <div class="col">
-              <img src="media/images/ko24.png" style="height: 300px;">
-            </div>
+
+        <div class="col" style="margin-top: 5%; margin-right: 5%; font-size: 18px;">
+          <p>
+            <a href="llcase.css" style="font-size: 24px;">KNOX-OUT!!</a> is (or was) created as a large Grassroots Fighting Game Tournament for players across the SouthEast.
+          </p>
+
+          <p>
+             After many years building and fostering working relationships with neighboring organizers across the state of Tennessee, <a href="llcase.css" style="font-size: 24px;">KNOX-OUT!!</a> was conceived as a way for all of our neighboring communities to come together once a year for an event that not only celebrates our strong community bonds, but also allows us as organizers to provide experiences and opportunities for our local players to compete on even higher stages with the best of all of our local competition in one place.
+          </p>
+
+          <p><a href="llcase.css" style="font-size: 24px;">KNOX-OUT!!</a>, now in it's 3rd year as of 2025, sees travel and support from hundreds of players not only in Tennessee, but from several states across the SouthEast and greater USA.</p>
+        </div>
         <br>
       </div>
 
         <div class="text-center" id="LL Case Study Button">
 
         </div>
-    <br>
+<br>
           <footer class="is-center">
-            <a href="KOCase.html" class="button primary">Read More</a>
+            <a href="" class="button primary">Read More</a>
           </footer>
-    <Br>
+<Br>
     </div>
       </div>
       <br>
@@ -281,7 +294,7 @@
 </div>
 
 <!--Begin Tab 3 Contact-->
-  <div x-show="tab == 3" class="centertext text-center">
+  <div x-show="tab == 3" class="centertext text-center setverdana">
     <div class="row">
       <div class="col">
           <h1 style="font-size: 42px;">Lets keep in touch</h1>
@@ -332,7 +345,7 @@
 
 <iframe src="media/music/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
 
-<audio autoplay loop controls>
+<audio autoplay loop>
   <source src="media/music/arcadeambient.mp3" type="audio/mp3">
 </audio>
 <!--end background video-->

@@ -1,0 +1,83 @@
+:root{
+    --color-darkGrey: #7a7a7a;
+    --color-primary: #1050ff;
+}
+
+@font-face {
+    font-family: Verdana;
+    src: url(fonts/Verdana.ttf) format('truetype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+/*modifies the .intro in intro.css*/
+.intro{
+    padding-top: 50px;
+    font-size: 5rem;
+}
+
+blockquote{
+    background-color: #949393;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+blockquote.centerfocus{
+    text-align: center;
+    color: #B51A17;
+    font-size: 4rem;
+    font-style: bold;
+    margin-bottom: 2.250rem;
+    margin-top: 1.125rem;
+    padding-left: 0;
+    line-height: 5rem;
+}
+
+.bodyintro{
+    padding-top: 10px;
+    margin-bottom: 5%;
+    font-size: 5rem;
+}
+
+.bodyps{
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.leftbodyps{
+    margin-left: 7%;
+    font-size: 14px;
+}
+
+.rightbodyps{
+    margin-right: 9%;
+    font-size: 14px;
+}
+
+.leftbodyimg{
+    margin-top: 20%;
+}
+
+.rightbodyimg{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.centerbody{
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+p{
+    margin-bottom: 3%;
+}
+
+.smalldark{
+    color: darkgray;
+    font-style: italic;
+    font-size: 3rem;
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+}

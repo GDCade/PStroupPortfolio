@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="icon" href=“icon.png">
+   <link rel="icon" type="image/png" href="llicon.png">
    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-   <title>Peyton S.</title>
+   <title>Local Legend Case Study</title>
 
    <!--call imported frameworks before master css-->
    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -16,264 +16,346 @@
    <!--end imported frameworks-->
 
    <link href="index.css" rel="stylesheet" type="text/css" media="all">
+   <link href="llcase.css" rel="stylesheet" type="text/css" media="all">
+   <link href="https://fonts.cdnfonts.com/css/verdana" rel="stylesheet">
+
   </head>
 <body>
-  
-
-  <!--current header-->
-  <div class="flex adjust">
-    <img src="media/images/mappy.png" class="icon" alt="logo">
-    <h1 class="bold">PSTROUP</h1>
+  <!--current Icon/Title-->
+  <div class="flex adjust" id="siteicon">
+    <a href="index.html"><img src="media/images/mappy.png" class="icon" alt="logo" style="padding: 5px;"></a>
+    <h1 class="bold">Peyton Stroup</h1>
     <a href="brat.html"><img src="media/images/brat.webp" alt="secret zone" class="bratbutton"></a>
 </div>
 <!---->
 
+<!--Begin Background 1-->
 
-<!--Nav Start-->
-<div  x-data="{tab: 2}">
-  <nav class="tabs is-full">
-    <a x-on:click="tab = 0;" :class="{ 'active': tab == 0 }">About</a>
-    <a x-on:click="tab = 1;" :class="{ 'active': tab == 1 }">Skills</a>
-    <a x-on:click="tab = 2;" :class="{ 'active': tab == 2 }">Experience</a>
-    <a x-on:click="tab = 3;" :class="{ 'active': tab == 3 }">Contact</a>
-  </nav>
+<div id="lane1" class="row" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
 
-  
-<!--begin Tab 0-->
-    <div x-show="tab == 0" class="centertext">
-        <div class="row">
-          <div class="col">
-              <h1>Me!</h1>
+<section id="Intro card">
+  <div class="col-8 casestudycard">
+    <div class="card text-light text-center case-blocks">
+      <h1 class="intro">Local Legend</h1>
+        <h4>Rivals and Growth in the Knoxville, TN Fighting Game Community</h4>
+          <div class="bodyps">
+              <p>My second home in life has always been with my Local Fighting Game Community, and my community work in Knoxville, TN is no exception. </p>
+              <p style="padding-bottom: 30px;">This is a story about how I took an entirely new approach to bringing people together...through Street Fighter.</p>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <p>
-              This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. This should be where the Bio goes. 
-            </p>
-            <p>
-              Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. Paragraphs can be separated like this. 
-            </p>
-          </div>
-          
-            <div class="col">
-              <img src="media/images/me.jpg" class="tabimagewiggle">
-            </div>
-
-      </div><!--end of About Row-->
     </div>
-<!--end of Tab 0-->
+  </div> <!--Close project 1 card-->
+</section>
 
-<!--Begin Tab 1-->
-    <div x-show="tab == 1" class="centertext">
-      <div class="row">
-        <div class="col">
-            <h1>Stuff I do and things I work with:</h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <div class="tabiconcontainer img-responsive">
-            <img class="tabicons img-responsive" src="media/images/skills/figma.png" id="html">
-            <img class="tabicons" src="media/images/skills/photoshop.png" id="photoshop">
-            <img class="tabicons  img-responsive" src="media/images/skills/davinci.png" id="davinci">
-            <img class="tabicons" src="media/images/skills/html.png" id="html">
-            <img class="tabicons" src="media/images/skills/css.png" id="css">
-            <img class="tabicons" src="media/images/skills/js.png" id="js">
-            <img class="tabicons" src="media/images/skills/sass.png" id="sass">
-            <img class="tabicons" src="media/images/skills/bootstrap.png" id="bootstrap">
-            <img class="tabicons" src="media/images/skills/github.png" id="github">
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <img src="media/images/me.jpg" class="tabimagewiggle">
-        </div>
-
-        <div class="col">
-          <p></p>
-          <p>
-            lets make a list here of all the stuff I work with.
-          </p>
-          <p>
-            This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. This should be where I write about the stuff I work with/on. 
-          </p>
-        </div>
+<section id="FS Image">
+  <div class="col-8 casestudycard">
+    <div class="card bg-dark">
+      <img src="media/images/FGC/token1.jpg">
     </div>
-    <!--end of About Row-->
   </div>
-<!--end of tab 1-->
+</section>
 
-<!--Begin Tab 2-->
-  <div x-show="tab == 2" class="centertext">
-    <div class="row">
+<section id="Background_RightImage">
+  <div class="row">
+    <div class="col-8 card casestudycard text-light case-blocks">
+      <div class="row">
       <div class="col">
-          <h1>What I'm up to:</h1>
-          <h4>Continue below for a selection of my Personal Projects, Community Ventures, and Case Studies.</h4>
+        <h1 class="intro" style="margin-left: 7%;">Why?</h1>
+            <div class="col leftbodyps">
+                <p>I've been running Local, in-person Fighting Game Events and Tournaments for about 10 years, most of which are completely free or low-cost to participate in. This is such a major part of my life that I created and run what's now the largest Fighting Game Event in the state of Tennessee: <a style="font-size: 16px;" href="https://www.start.gg/tournament/knox-out-24/details">KNOX-OUT!</a></p>
+
+                <p>In a hobby like ours, many use it as a form of escapism. Many play online exclusively with little to no human interaction - a missing key piece that I believe is a core aspect of what makes Fighting Games so incredible.</p>
+
+                <p>I resonate with "Arcade Culture" down to my core: Using a shared love of Video Games and Competition to bring people together in a <a style="font-size: 16px;" href="https://esl.uchicago.edu/2023/11/01/third-places-what-are-they-and-why-are-they-important-to-american-culture/">Third Space.</a> With the FGC space starved for incentives to participate locally unless you're the type to seek out local competition as it is, Local Legend is my fun attempt to bridge the gap on gamifying even the act of regular attendance, and encourage even more socializing and community growth.</p>
+            </div>
+      </div>
+            <div class="col">
+              <img src="media/images/FGC/me1.jpg" class="leftbodyimg">
+            </div>
+        </div>
+      </div>   
+  </div> <!--Close project 1 card-->
+</section>
+
+<section id="Starter Details">
+  <div class="col-8 casestudycard">
+    <div class="card case-blocks bg-dark centerbody">
+      <h5>The Challenge</h5>
+      <h1>Find What Drives</h1>
+          <div>
+              <p>As a Local TO (Tournament Organizer), I'm constantly making mental notes on reasons why people in my area may not be attending in-person events. For some, it may be distance from the venue. For others, it's the economics of time spent and what they gain from that. Across my time as a TO, I've found all too often just how many people struggle with the concept of real growth in this hobby, and what that looks like in practice.</p>
+              <p>Ever since the COVID-19 pandemic, many Fighting Game players connect their ability with a rank they've earned by playing online in their game of choice. The benefit of these systems is Skill-Based Matchmaking; ensuring they're always set to play against an opponent of roughly equal skill. In person, however, no such indicators exist, and the impending wave of anxiety begins to set in. Instead of enjoying the time spent intaracting with another person who shares your passions, players are often anxious about their performance - so much so that failing to meet their own expectations may be enough to destroy any interest in returning.</p>
+
+              <div class="flex adjust">
+              <img style="height: 60px;" src="media/images/FGC/Ranks/Rookie.webp">
+              <img style="height: 60px;" src="media/images/FGC/Ranks/Bronze.webp">
+              <img style="height: 60px;" src="media/images/FGC/Ranks/Silver.webp">
+              <img style="height: 60px;" src="media/images/FGC/Ranks/Gold.webp">
+              <img style="height: 60px;" src="media/images/FGC/Ranks/Diamond.webp">
+              <img style="height: 60px;" src="media/images/FGC/Ranks/Master.webp">
+              </div>
+<br>
+              <p style="text-align: center;">In other words...In other words...most new players are introduced to the genre online, and don't understand the benefits of </p>
+
+              <blockquote class="centerfocus">
+              Growth through Socialization.
+              </blockquote>
+
+              <p style="text-align: center;">So, how do we connect these Formats?</p>
+          </div>
+    </div>
+  </div> <!--Close project 1 card-->
+</section>
+
+<section id="FS 3 Images">
+  <div class="col-8 casestudycard">
+    <div class="card text-light intro is-center">
+      <p>Gameify the Game.</p>
+      <div class="flex adjust is-center" style="margin-bottom: 5%;">
+        
+      <img style="width: 300px;" src="media/images/LL/llprofile.png">
+      <img style="width: 300px;" src="media/images/LL/LLHome.png">
+      <img style="width: 300px;" src="media/images/LL/LLRival.png">
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="row">
+<section id="People Aren't a Game">
+  <div class="row flex">
+    <div class="col-8 card casestudycard bg-dark case-blocks">
+      <div class="row">
 
-      <div class="col" id="lane1">
-        <div class="card text-light">
-            <header>
-              <h3>
-                Current Position:
-              </h3>
-              <h4>Intellitext: Communication Access</h4>
-              <p>-------</p>
-            </header>
-              <p>Connecting virtually with disabled and hearing impaired students across the US and Canada in all levels of Acedemia providing communication access and live transcription services.</p>
-              <br>
+        <div class="col">
+          <img src="media/images/LL/LLHomeGif.gif" class="rightbodyimg" style="width: 400px; border-radius: 15%;">
+        </div>
+
+      <div class="col">
+        <h1 class="intro" style="margin-right: 9%;">People aren't a game...</h1>
+            <div class="col rightbodyps">
+
+                <p>...but they can be!</p>
+
+                <p>While yes, I do LOVE sitting down at a Street Fighter III arcade machine, what I love more is the banter I get to have with the person across from me on the Player 2 cabinet. But sometimes, that's not always enough. Not everyone can magically turn into a social butterfly overnight. However, many of these same people DO care about getting better in their game of choice...which is a pretty hard mountain to climb for the anti-social, considering the peak of Fighting Game Play happens on <a style="font-size: 16px;" href="https://www.youtube.com/watch?v=X-C435HjNhg">live stages with massive audiences.</a></p>
+
+                <p>Eventually, in the quest for harder hitting punches and more devestating fireballs, playing in-person is inevitable. For the more goal oriented player, having a "Rival" is one of the best ways to get regular practice and meaningful feedback. Think of it as similar to how <a style="font-size: 16px;" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6523870/">having a workout buddy can help you see better Gym Results!</a></p>
+
+                <p>So, the planning for <a href="" style="font-size: 16px;">Local Legend</a> began. A simple and fun way for my local community to interact with one another through mediums they already enjoy, and hopefully invite some players who aren't convinced by hugs and kisses alone!</p>
+            </div>
+      </div>
             
         </div>
-<br>
-        <div class="card text-light">
-          <header>
-            <h3>
-              Previously:
-            </h3>
-            <h4>Univerity of Tennessee: Student Disability Services</h4>
-            <p>-------</p>
-          </header>
-            <p>Partnered with many disabled and hearing impaired students from a wide range of majors and disciplines each semeter to provide live communication access and transcription services in the classroom setting.</p>
-            <br>
-          
-      </div>
-      </div>
-      
-      <div class="col" id="lane2">
-        <div class="card text-light">
-          <h3>
-            Education:
-          </h3>
-          <h4>University of Tennessee Knoxville</h4>
-          <h5>BS in Information Science - UX Design Concentration</h5>
-          <p>-------</p>
-        </header>
-          <p>Graduating as of December 2024.</p>
-          <br>
-        </div>
-<Br>
-        <div class="card text-light">
-          <h3>
-            Education Cont. :
-          </h3>
-          <h4>Google UX Design Certification</h4>
-          <p>-------</p>
-        </header>
-          <p>Completed as a personal interest during my 3rd year at UTK.</p>
-          <br>
-        </div>
-      </div>
-  </div>
+      </div>   
+  </div> <!--Close project 1 card-->
+</section>
 
-  <br>
-
+<section id="Start Powered RightImage">
   <div class="row">
-      <div class="col">
-        <div class="tabibreaker">
-        </div>
-      </div>
-  </div>
-<br>
-
-<div class="row text-center">
-  <div class="col">
-      <h1>- Projects and Case Studies -</h1>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col" id="lane1">
-    <div class="card text-light">
-      <div class="text-center">
-        <header>
-          <h3>
-            Local Legend
-          </h3>
-          <h4>Local Fighting Game Tournament Stat Tracker</h4>
-          <p>-------</p>
-        </header>
-      </div>
-<br>
+    <div class="col-8 card casestudycard bg-dark case-blocks">
       <div class="row">
-        <div class="col">
-          <img src="media/images/me.jpg" class="projectpreviewimg">
-        </div>
+      <div class="col">
+        <h1 class="intro" style="margin-left: 7%;">A Familiar Face</h1>
+            <div class="col leftbodyps">
+                <p>Many FGC groups use <a style="font-size: 16px;" href="https://www.start.gg/">Start.gg,</a> an online tournament bracket creation and management service, to host their events. While their platform is invaluable in keeping the FGC afloat, they're also notorious for having incredibly poor mobile support (with no dedicated app in sight), as well as severely underutilizing their collection of stats.</p>
 
-        <div class="col">
-          <p></p>
-          <p>
-            This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  
-          </p>
-          <p>
-            This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  
-          </p>
-        </div>
-        <br>
+                <p>Local Legend is designed to utilize the (rather new) <a style="font-size: 16px;" href="https://developer.start.gg/docs/intro/">Start.gg API</a> to scrape and present its data using <a style="font-size: 16px;" href="https://graphql.org/">GraphQL</a>. The actual functionality of this is a ways behind the iterative design process that this project originally scoped, but it's actual implimentation has become a side project nontheless. Utilizing their database, this allowed me to present data to my users that they may already be familiar with, as well as use their own profile pictures for their preexisting Start.gg accounts. This also left me without the need for any formal login or data security process in the design, as there are no mutations performed or intended by Local Legend. It simply displays and compares existing data without alteration.</p>
+
+            </div>
       </div>
-
-        <div class="text-center" id="LL Case Study Button">
-
+            <div class="col">
+              <img src="media/images/LL/startggbanner.webp" class="leftbodyimg">
+            </div>
         </div>
-<br>
-          <footer class="is-center">
-            <a href="LLCase.html" class="button primary">Read More</a>
-          </footer>
-<Br>
-    </div>
-    <!--Close project 1 card-->
-<br>
+      </div>   
+  </div> <!--Close project 1 card-->
+</section>
 
-<div class="card text-light">
-  <div class="text-center">
-    <header>
-      <h3>
-        KNOX-OUT!!
-      </h3>
-      <h4>Largest Annual Fighting Game Tournament in TN</h4>
-      <p>-------</p>
-    </header>
-  </div>
-<br>
+<section id="Coming Clean">
+  <div class="col-8 casestudycard">
+    <div class="card text-light text-center case-blocks">
+      <h1 class="intro">BUT FIRST</h1>
+        <h4>Addressing the Elephant and the Case Study</h4>
+          <div class="bodyps">
+              <p>To preface: This project is/was actually used as my Capstone Project for my final semester at the University of Tennessee Knoxville. After working on projects asigned to me for 4 years straight, I jumped at the opportunity to work on something I actually would want for MYSELF...despite the focus always being user-centered! That being said, this project is a strange inbetween of "Student Work" and "Personal Project."</p>
+              <p style="margin-bottom: 30px;"></p>
+          </div>
+    </div>
+  </div> <!--Close project 1 card-->
+</section>
+
+<section id="Needs and Goals RightImage">
   <div class="row">
-    <div class="col">
-      <p></p>
-      <p>
-        This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  
-      </p>
-      <p>
-        This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  This is where I write about the app/site.  
-      </p>
-    </div>
-        <div class="col">
-          <img src="media/images/ko24.png" style="height: 300px;">
+    <div class="col-8 card casestudycard bg-dark case-blocks">
+      <div class="row">
+      <div class="col">
+        <h1 class="intro" style="margin-left: 7%;">Scope, Aim, Needs</h1>
+            <div class="col leftbodyps">
+                <p>In brief: I wanted to make something that would be engaging enough to bring our communities closer, but not something desire-intensive enough to distract from the joy of socializing with peers. My current regulars (see: Userbase) meant a lot to me - the goodwill fostered over years of running events isn't something I intend to waste the time of. So, I wanted the app to first and foremost be about them. Keeping the experience User-Centric, Convenient, and Meaningful.</p>
+
+                <p>Stephen Anderson's Hierarchy of Needs was a constant reference during the initial sketching and conceptualization. Having a framework that placed Meaningful experiences with a basis on trust and transparency felt like a model that I could take to my community proudly.</p>
+
+            </div>
+      </div>
+            <div class="col">
+              <img src="media/images/LL/stephenendersonneeds.jpg" class="leftbodyimg">
+            </div>
         </div>
-    <br>
-  </div>
+      </div>   
+  </div> <!--Close project 1 card-->
+</section>
 
-    <div class="text-center" id="LL Case Study Button">
+<section id="Trust and LeanUX Left Image">
+  <div class="row flex">
+    <div class="col-8 card casestudycard bg-dark case-blocks">
+      <div class="row">
 
+        <div class="col">
+          <img src="media/images/FGC/locals2.jpg"  style="width: 600px; border-radius: 5%; margin-top: 30%; margin-right: 3%;">
+        </div>
+
+      <div class="col">
+        <h1 class="intro" style="margin-right: 9%;">Creating with the Culture</h1>
+            <div class="col rightbodyps">
+
+               <p>While my intention was the only test with a small, trusted group of users(~5) from our regular playerbase(~40), there was quickly excitement, questions, and deliberations from my community about what features would do what and if this-or-that could be implimented before a figma project could even be opened...but this was a blessing! While I did inevitably stick to a core 5 users to schedule some iterative testing with, having input at every stage of the project allowed for valuable insight that I wouldn't have otherwise considered throughout the process.</p>
+
+               <p>This lead to a preference towards Lean, collaborative UX. I would often take my notebook(s) (I would often lose them in the shuffle of all of our community gear and eventually kept multiples) with me when setting up meetups and events, and take general notes, sketches, or offhand concerns when mentioned. Being able to do this kind of rapid sketching and iterations every other week or so helped strengthen my confidence in the direction the app was heading during the higher fidelity phases of the design.</p>
+
+                
+            </div>
+      </div>
+            
+        </div>
+      </div>   
+  </div> <!--Close project 1 card-->
+</section>
+
+<section id="Add Sketches Here">
+  <div class="col-8 casestudycard">
+    <div class="card text-light intro is-center">
+      <p>Rapid Sketching and Live Notes</p>
+      <div class="flex adjust is-center" style="margin-bottom: 5%;">
+        
+      <img style="width: 300px;" src="media/images/LL/llprofile.png">
+      <img style="width: 300px;" src="media/images/LL/LLHome.png">
+      <img style="width: 300px;" src="media/images/LL/LLRival.png">
+      </div>
     </div>
-<br>
-      <footer class="is-center">
-        <a class="button primary">Read More</a>
-      </footer>
-<Br>
-</div>
   </div>
-  <br>
-</div>
+</section>
 
-<!--end of Tab 2-->
+<section id="The Discovery">
+  <div class="col-8 casestudycard">
+    <div class="card case-blocks bg-dark centerbody">
+      <h5>The Discovery</h5>
+      <h1>Is this just a game?</h1>
+          <div>
+              <p>The Discovery Phase of Local Legend was...rapid, to say the least. I had a small handful of very passionate players nearly every meeting session who were eager to sit with me and discuss "exactly" what would make the system useful. This left me in an interesting position of receiving feedback from not only a slient perspective, but, technically, a stakeholders as well. Being able to design for such a niche userbase allowed for me to immedietely begin researching user needs, pain-points, and key points of interest.</p>
+
+              <div class="flex adjust">
+              <img style="border-radius: 10%;" src="media/images/FGC/localsllzoom.png">
+              </div>
+              <p style="text-align: center; font-size: 10px;">Pictured: SF6 Set with Local Legend left open.</p>
+
+              <p>This Research ultimately culminated in a desire to see who was the biggest target in the room, so to speak. While many did inquire about the original scheme, using the system as a means of keeping up with a specific sparring partner, many were more isnterested in setting a player as a Rival as a metaphorical mountain to climb. This was an incredible insight into my users Motivations, and lead to the "Rival Count" addition. This started to make the system lean more towards a social media in my eyes, but knowing how much a player was envied was valuable insight to both the userbase as well as the podiumed player in question.</p>
+
+              <p>This data was found through anonymous surveying of my regular attendees - they would submit their tags (nicknames) along with their opinions, which served as my example data during the different iterations of the design. The initial concept of Local Legend almost immedietely jumped to a "version 2" after the initial data collection. In order to follow the Hierarchy of needs effectively, I wanted to focus on a few key aspects that my users had highlighted through the aggregation of their feedback and motivations:</p>
+<Br>
+              <p style="text-align: center; font-weight: bold; font-size: 26px; margin-bottom: 10%;">Simple - Gratifying - Encouraging</p>
+          </div>
+    </div>
+  </div> <!--Close project 1 card-->
+</section>
+
+<section id="FS 3 Images pt2">
+  <div class="col-8 casestudycard">
+    <div class="card text-light intro is-center">
+      <p>Always Punching Up</p>
+      <div class="flex adjust is-center" style="margin-bottom: 5%;">
+        
+      <img style="width: 300px;" src="media/images/LL/LLMission.png">
+      <img style="width: 300px;" src="media/images/LL/LLHolly.png">
+      <img style="width: 300px;" src="media/images/LL/LLrivalcount.png">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Real World Left Image">
+  <div class="row flex">
+    <div class="col-8 card casestudycard bg-dark case-blocks">
+      <div class="row">
+
+        <div class="col">
+          <img src="media/images/FGC/locals5.jpg"  style="width: 600px; border-radius: 5%; margin-top: 30%; margin-right: 3%;">
+        </div>
+
+      <div class="col">
+        <h1 class="intro" style="margin-right: 9%;">Real-World Ideals</h1>
+            <div class="col rightbodyps">
+
+               <p>Knowing exactly who I was designing for was such a rare experience compared to my previous projects, as at this stage, I typically would have been compiling personas to compare against...but, why use personas when just about every personality type that I could encounter is ready and willing to work with me? Being able to look at my "Personas" interacting with each iteration exactly, while also technically acting as my stakeholders allowed me to keep every scenario presented as a "real world" scenario. Ideally these would be the same users purchasing the app upon its completion if it were a paid product, so, "Stakeholders" also feel appropriate here in lieu of a publisher.</p>
+
+               <p>Being able to keep every scenario in a real-world setting allowed us to explore new concepts immedietely. Having earlier iterations out in the wild allowed us to roleplay using existing transitions and formats in new, more pleasant ways before the more practical user testing sessions.</p>
+
+                
+            </div>
+      </div>
+            
+        </div>
+      </div>   
+  </div> <!--Close project 1 card-->
+</section>
+
+<section id="Background_RightImage">
+  <div class="row">
+    <div class="col-8 card casestudycard text-light case-blocks">
+      <div class="row">
+      <div class="col">
+        <h1 class="intro" style="margin-left: 7%;">Process</h1>
+            <div class="col leftbodyps">
+
+                <p>One benefit to keeping this so well-rooted in the real world is: this is still about competition at it's core, and sometimes, you don't perform your best.</p>
+
+                <p>When considering some potential user journeys, I storyboarded a few routes, and realized that all roads led to the same outcome. Whether a player used the app or not, the social experience would still need to be tackled, and the app should just be trying to encourage and reward them for trying as much as they can. For more experienced players, they'll have the generated stats to reflect upon. For the mid-level players, they can have either the stats-focused route or social-focused route depending on their use case. For the brand new players, the social aspect has been discussed.</p>
+
+                <p>Much like a Gym membership designing new ways to have their users continue their subscriptions, its always ultimately up to the user as to whether or not they want to view their own metrics and be given a tool. Nevertheless, preparing these boards also allowed me to not prepare for any extreme Edge Cases.</p>
+
+            </div>
+      </div>
+            <div class="col">
+              <img src="media/images/LL/roadmapboldwhite.png" class="leftbodyimg">
+            </div>
+        </div>
+      </div>   
+  </div> <!--Close project 1 card-->
+</section>
+
+<section id="Testing Day">
+  <div class="col-8 casestudycard">
+    <div class="card case-blocks bg-dark centerbody">
+      <h5>Testing Day</h5>
+      <h1>Narrowing Down Details</h1>
+          <div>
+              <p>Excuse the silly screenshots, but I wanted to keep the authenticity of how these tests were actually conducted. I recruited 5 partitipants from my local FGC who had somehow miraculously NOT interacted with Local Legend at our events up to this point; at least not with its current design revision. The first portion of the test was conducted on a laptop in order to record their activity, expressions, qualitative commentary and remarks, as well as capture some rudementary eye-tracking to get a  guage on the heat map data.</p>
+
+              <div class="flex is-center" style="width: 500px; margin-left: 20%;">
+              <img style="border-radius: 10%; padding: 5px;" src="media/images/LL/usertestsc1.png">
+              <img style="border-radius: 10%; padding: 5px;" src="media/images/LL/usertestsc2.png">
+              </div>
+              <p style="text-align: center; font-size: 10px;">Pictured: "Final" revision User Testing on 11/2024</p>
+
+              <p>Each user at this point also used the software with images slightly altered to see their own accounts during this experience. Very minor addition, but in order to further push that last hierarchal need - meaningfuness - I wanted the users to be able to see their own basic identifiers and data to establish a personal connection. Or, alternatively, guage any negative reactions to their data being visible in this way.</p>
+
+              <p>With a nearly 100% task completion rate, I was pleasently relieved to see the work of all of the notetaking and sketching over the prior months come to fruition, and still seem very usable in the hands of the inexperienced. Users also enjoyed seeing the Badges associated with Missions - providing small, non-exhaustive rewards to even the small acts of being an active part in our community. It's with great pride that I believe I was able to stay true to the defining characteristics I began with:</p>
+<Br>
+              <p style="text-align: center; font-weight: bold; font-size: 26px; margin-bottom: 10%;">Simple - Gratifying - Encouraging</p>
+          </div>
+    </div>
+  </div> <!--Close project 1 card-->
+</section>
+
 </div>
-<!--End Nav-->
+<!--end lane-->
 
 
 <!--background video-->
@@ -282,7 +364,7 @@
 </video>
 
 <div id="bgoverlay" class="overlayhidden">
-  <img src="media/video/scanlines.png" style="display: inline;">
+  <img src="media/video/scanlines.png" style="display: inline; background-repeat: repeat; ">
 </div>
 
 <audio loop  controls>
