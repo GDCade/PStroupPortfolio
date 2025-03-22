@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
    <link rel="icon" href="media/images/mappy.png">
    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
@@ -10,7 +10,6 @@
 
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
    
-
    <link href="css/chota.min.css" rel="stylesheet" type="text/css">
    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
    <!--end imported frameworks-->
@@ -19,18 +18,17 @@
   </head>
 <body>
   
-
   <!--current header-->
   <div class="flex adjust">
     <img src="media/images/mappy.png" class="icon" alt="logo">
-    <h1 class="bold" style="white-space: nowrap;">PEYTON S.</h1>
-    <a href="brat.html"><img src="media/images/brat.webp" alt="secret zone" class="bratbutton"></a>
-</div>
-<!---->
+    <h1 class="bold" style="white-space: normal;">PEYTON S.</h1>
+    <a href="/brat" class="ms-auto"><img src="media/images/brat.webp" alt="secret zone" class="bratbutton"></a>
+  </div>
+  <!---->
 
 
 <!--Nav Start-->
-<div  x-data="{tab: 0}">
+<div x-data="{tab: 0}" class="container-fluid px-0">
   <nav class="tabs is-full setverdana">
     <a x-on:click="tab = 0;" :class="{ 'active': tab == 0 }">About</a>
     <a x-on:click="tab = 1;" :class="{ 'active': tab == 1 }">Skills</a>
@@ -40,70 +38,69 @@
 
   
 <!--begin Tab 0-->
-    <div x-show="tab == 0" class="centertext setverdana">
-        <div class="row">
-          <div class="col">
-              <h1>Hi! I'm Peyton</h1>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <p>
-               Your new favorite UX Designer and Arcade Connoisseur from Knoxville, TN! (Let me know if there's another one!)
-            </p>
-            <p>
-              When I'm not spending time with my wonderful partner and zoo-worthy number of animals at home, you can usually find me running your local Fighting Game tournaments as "Scruffy City FGC," volunteering for the Tennessee Suicide Prevention Network, or gluing my eyes to some new piece of design technology.
-            </p>
-
-            <p>After going back to school in 2020 in the middle of the Pandemic, I've recently graduated from the University of Tennessee Knoxville with a Degree in Information Science - UX Design Concentration as of December 2024.</p>
-
-            <p>During my time at UT, I've begun working both on campus for their Student Disability Services Center and with Intellitext to provide communication access to deaf and hard of hearing students in the college classroom setting, and remotely across the US and Canada in all levels of Academia!</p>
-
-            <p>I've also Created and Run what is now Tennessee's largest annual Fighting Game Tournament, KNOX-OUT! This event sees travel from hundreds of competitors across the SouthEast for titles like Street Fighter, Tekken, Mortal Kombat, etc. Arcade Culture runs through my veins, and with that means I place community building and providing memorable, accessible experiences at the forefront of everything I do.</p>
-
-            <H3 style="font-weight: bold; font-size: 18x; padding-top: 10px;">Let's make Great things together!</H3>
-          </div>
-          
-            <div class="col">
-              <img src="media/images/me.jpg" class="tabimagewiggle">
-            </div>
-
-      </div><!--end of About Row-->
+<div x-show="tab == 0" class="centertext setverdana">
+  <div class="row">
+    <div class="col-12">
+        <h1>Hi! I'm Peyton</h1>
     </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6 col-md-6">
+      <p>
+         Your new favorite UX Designer and Arcade Connoisseur from Knoxville, TN! (Let me know if there's another one!)
+      </p>
+      <p>
+        When I'm not spending time with my wonderful partner and zoo-worthy number of animals at home, you can usually find me running your local Fighting Game tournaments as "Scruffy City FGC," volunteering for the Tennessee Suicide Prevention Network, or gluing my eyes to some new piece of design technology.
+      </p>
+
+      <p>After going back to school in 2020 in the middle of the Pandemic, I've recently graduated from the University of Tennessee Knoxville with a Degree in Information Science - UX Design Concentration as of December 2024.</p>
+
+      <p>During my time at UT, I've begun working both on campus for their Student Disability Services Center and with Intellitext to provide communication access to deaf and hard of hearing students in the college classroom setting, and remotely across the US and Canada in all levels of Academia!</p>
+
+      <p>I've also Created and Run what is now Tennessee's largest annual Fighting Game Tournament, KNOX-OUT! This event sees travel from hundreds of competitors across the SouthEast for titles like Street Fighter, Tekken, Mortal Kombat, etc. Arcade Culture runs through my veins, and with that means I place community building and providing memorable, accessible experiences at the forefront of everything I do.</p>
+
+      <H3 style="font-weight: bold; font-size: 18px; padding-top: 10px;">Let's make Great things together!</H3>
+    </div>
+    
+    <div class="col-6 col-md-6 text-center">
+      <img src="media/images/me.jpg" class="tabimagewiggle">
+    </div>
+
+</div><!--end of About Row-->
+      
 <!--end of Tab 0-->
 
 <!--Begin Tab 1-->
     <div x-show="tab == 1" class="centertext setverdana">
       <div class="row">
-        <div class="col">
+        <div class="col-12">
             <h1>Stuff I do and things I work with:</h1>
         </div>
       </div>
 
       <div class="row">
-        <div class="col">
+        <div class="col-12">
           <div class="tabiconcontainer img-responsive">
-            <img class="tabicons img-responsive" src="media/images/skills/figma.png" id="html">
-            <img class="tabicons" src="media/images/skills/photoshop.png" id="photoshop">
-            <img class="tabicons  img-responsive" src="media/images/skills/davinci.png" id="davinci">
-            <img class="tabicons" src="media/images/skills/html.png" id="html">
-            <img class="tabicons" src="media/images/skills/css.png" id="css">
-            <img class="tabicons" src="media/images/skills/js.png" id="js">
-            <img class="tabicons" src="media/images/skills/sass.png" id="sass">
-            <img class="tabicons" src="media/images/skills/bootstrap.png" id="bootstrap">
-            <img class="tabicons" src="media/images/skills/github.png" id="github">
+            <img class="tabicons img-responsive" src="media/images/skills/figma.png" alt="Figma">
+            <img class="tabicons" src="media/images/skills/photoshop.png" alt="Photoshop">
+            <img class="tabicons img-responsive" src="media/images/skills/davinci.png" alt="DaVinci Resolve">
+            <img class="tabicons" src="media/images/skills/html.png" alt="HTML">
+            <img class="tabicons" src="media/images/skills/css.png" alt="CSS">
+            <img class="tabicons" src="media/images/skills/js.png" alt="JavaScript">
+            <img class="tabicons" src="media/images/skills/sass.png" alt="Sass">
+            <img class="tabicons" src="media/images/skills/bootstrap.png" alt="Bootstrap">
+            <img class="tabicons" src="media/images/skills/github.png" alt="GitHub">
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <img src="media/images/me2.jpg" class="projectpreviewimg" style="margin-top: 10%;">
+      <div class="row mt-4">
+        <div class="col-12 col-md-6 text-center">
+          <img src="media/images/me2.jpg" class="projectpreviewimg">
         </div>
 
-        <div class="col" style="margin-top: 5%;">
-          <p></p>
+        <div class="col-12 col-md-6 mt-3 mt-md-5">
           <p>
             I love Making...Stuff!
           </p>
@@ -123,7 +120,7 @@
 
     <!--Header-->
     <div class="row">
-      <div class="col">
+      <div class="col-12">
           <h1>What I'm up to:</h1>
           <h4>Continue below for a selection of my Personal Projects, Community Ventures, and Case Studies.</h4>
       </div>
@@ -131,7 +128,7 @@
     <!--Header end-->
 
     <div class="row">
-      <div class="col" id="lane1">
+      <div class="col-12 col-md-6" id="lane1">
         <div class="card text-light">
             <header>
               <h3>
@@ -144,7 +141,7 @@
               <br>
             
         </div>
-<br>
+        <br>
         <div class="card text-light">
           <header>
             <h3>
@@ -156,10 +153,10 @@
             <p>Partnered with many disabled and hearing impaired students from a wide range of majors and disciplines each semeter to provide live communication access and transcription services in the classroom setting.</p>
             <br>
           
-      </div>
+        </div>
       </div>
       
-      <div class="col" id="lane2">
+      <div class="col-12 col-md-6" id="lane2">
         <div class="card text-light">
           <h3>
             Education:
@@ -171,7 +168,7 @@
           <p>Graduating as of December 2024.</p>
           <br>
         </div>
-<Br>
+        <br>
         <div class="card text-light">
           <h3>
             Education Cont. :
@@ -183,30 +180,30 @@
           <br>
         </div>
       </div>
-  </div>
+    </div>
 
-  <br>
+    <br>
 
-  <!--Breakline-->
-  <div class="row">
-      <div class="col">
-        <div class="tabibreaker">
+    <!--Breakline-->
+    <div class="row">
+        <div class="col-12">
+          <div class="tabibreaker">
+          </div>
         </div>
+    </div>
+
+    <br>
+
+    <!--Case Studies Header-->
+    <div class="row text-center">
+      <div class="col-12">
+          <h1>- Projects and Case Studies -</h1>
       </div>
-  </div>
-
-<br>
-
-<!--Case Studies Header-->
-<div class="row text-center">
-  <div class="col">
-      <h1>- Projects and Case Studies -</h1>
-  </div>
-</div>
+    </div>
 
 
-<div class="row">
-      <div class="col" id="lane1">
+    <div class="row">
+      <div class="col-12" id="lane1">
         <div class="card text-light">
           <div class="text-center">
             <header>
@@ -217,13 +214,13 @@
               <p>-------</p>
             </header>
           </div>
-    <br>
+          <br>
           <div class="row">
-            <div class="col">
-              <img src="media/images/LL/LLHome.png" class="flex adjust" style="width: 300px;">
+            <div class="col-12 col-md-5 text-center">
+              <img src="media/images/LL/LLHome.png" class="img-fluid" style="max-width: 300px;">
             </div>
 
-            <div class="col" style="margin-top: 5%; margin-right: 5%; font-size: larger;">
+            <div class="col-12 col-md-7 mt-3 mt-md-5">
               <p>
                 <a href="LLcase.html" style="font-size: 24px;">Local Legend</a> is an app I designed and documented the creation of for my Capstone Project at the University of Tennessee Knoville.
               </p>
@@ -235,117 +232,123 @@
             <br>
           </div>
 
-            <div class="text-center" id="LL Case Study Button">
+          <div class="text-center" id="LL Case Study Button">
 
-            </div>
-    <br>
-              <footer class="is-center">
-                <a href="LLcase.html" class="button primary">Read More</a>
-              </footer>
-    <Br>
+          </div>
+          <br>
+          <footer class="is-center">
+            <a href="LLcase.html" class="button primary">Read More</a>
+          </footer>
+          <br>
         </div>
         <!--Close project 1 card-->
-    <br>
-
-    <div class="card text-light">
-      <div class="text-center">
-        <header>
-          <h3>
-            KNOX-OUT!!
-          </h3>
-          <h4>Tennessee's Largest Annual Fighting Game Tournament Series</h4>
-          <p>-------</p>
-        </header>
-      </div>
-<br>
-      <div class="row">
-        <div class="col is-center">
-          <img src="media/images/ko24.png" class="flex adjust" style="width: 500px;">
-        </div>
-
-        <div class="col" style="margin-top: 5%; margin-right: 5%; font-size: 18px;">
-          <p>
-            <a href="index.html" style="font-size: 24px;">KNOX-OUT!!</a> is (or was) created as a large Grassroots Fighting Game Tournament for players across the SouthEast.
-          </p>
-
-          <p>
-             After many years building and fostering working relationships with neighboring organizers across the state of Tennessee, <a href="index.html" style="font-size: 24px;">KNOX-OUT!!</a> was conceived as a way for all of our neighboring communities to come together once a year for an event that not only celebrates our strong community bonds, but also allows us as organizers to provide experiences and opportunities for our local players to compete on even higher stages with the best of all of our local competition in one place.
-          </p>
-
-          <p><a href="index.html" style="font-size: 24px;">KNOX-OUT!!</a>, now in it's 3rd year as of 2025, sees travel and support from hundreds of players not only in Tennessee, but from several states across the SouthEast and greater USA.</p>
-        </div>
         <br>
-      </div>
 
-        <div class="text-center" id="LL Case Study Button">
+        <div class="card text-light">
+          <div class="text-center">
+            <header>
+              <h3>
+                KNOX-OUT!!
+              </h3>
+              <h4>Tennessee's Largest Annual Fighting Game Tournament Series</h4>
+              <p>-------</p>
+            </header>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-12 col-md-5 text-center">
+              <img src="media/images/ko24.png" class="img-fluid" style="max-width: 100%;">
+            </div>
 
-        </div>
-<br>
+            <div class="col-12 col-md-7 mt-3 mt-md-5">
+              <p>
+                <a href="index.html" style="font-size: 24px;">KNOX-OUT!!</a> is (or was) created as a large Grassroots Fighting Game Tournament for players across the SouthEast.
+              </p>
+
+              <p>
+                 After many years building and fostering working relationships with neighboring organizers across the state of Tennessee, <a href="index.html" style="font-size: 24px;">KNOX-OUT!!</a> was conceived as a way for all of our neighboring communities to come together once a year for an event that not only celebrates our strong community bonds, but also allows us as organizers to provide experiences and opportunities for our local players to compete on even higher stages with the best of all of our local competition in one place.
+              </p>
+
+              <p><a href="index.html" style="font-size: 24px;">KNOX-OUT!!</a>, now in it's 3rd year as of 2025, sees travel and support from hundreds of players not only in Tennessee, but from several states across the SouthEast and greater USA.</p>
+            </div>
+            <br>
+          </div>
+
+          <div class="text-center" id="LL Case Study Button">
+
+          </div>
+          <br>
           <footer class="is-center">
             <a href="" class="button primary">Read More</a>
           </footer>
-<Br>
-    </div>
+          <br>
+        </div>
       </div>
       <br>
-</div>
+    </div>
 
-<!--end of Tab 2-->
-</div>
+  <!--end of Tab 2-->
+  </div>
 
-<!--Begin Tab 3 Contact-->
+  <!--Begin Tab 3 Contact-->
   <div x-show="tab == 3" class="centertext text-center setverdana">
     <div class="row">
-      <div class="col">
+      <div class="col-12">
           <h1 style="font-size: 42px;">Lets keep in touch</h1>
             <h4>Always time for great Ideas over Coffee.</h4>
               <h7>...or Street Fighter over Lunch.</h7>
-<br>
+          <br>
       </div>
     </div>
 
     <div class="row">
-      <div class="col">
-    <div class="card centercontact">
-      <div class="col">
-        <div class="img-responsive">
-          <a href="https://www.linkedin.com/in/peytonstroup/"><img class="tabicons img-responsive" src="media/images/connect/linkedin.webp" id="linkedin"></a>
+      <div class="col-12">
+        <div class="card centercontact">
+          <div class="row">
+            <div class="col-12">
+              <div class="img-responsive d-flex justify-content-center flex-wrap">
+                <a href="https://www.linkedin.com/in/peytonstroup/" class="mx-2">
+                  <img class="tabicons img-responsive" src="media/images/connect/linkedin.webp" alt="LinkedIn">
+                </a>
 
-          <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=PStroupGD@gmail.com&tf=1"><img class="tabicons img-responsive" src="media/images/connect/email.png" id="email"></a>
+                <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=PStroupGD@gmail.com&tf=1" class="mx-2">
+                  <img class="tabicons img-responsive" src="media/images/connect/email.png" alt="Email">
+                </a>
 
-          <a href="https://x.com/GD_Cade"><img class="tabicons img-responsive" src="media/images/connect/twitter.png" id="twitter"></a>
+                <a href="https://x.com/GD_Cade" class="mx-2">
+                  <img class="tabicons img-responsive" src="media/images/connect/twitter.png" alt="Twitter">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
       </div>
     </div>
 
     <footer>
       <div class="row">
-        <div class="col">
+        <div class="col-12">
               <h4>Lets make Great things</h4>
         </div>
       </div>
     </footer>
-
-
   </div>
 </div>
 <!--End Nav-->
 
 
 <!--background video-->
-<video id="bgvid" autoplay loop muted style="display: inline;">
-  <source  src="media/video/sf2.mp4" type="video/mp4">
+<video id="bgvid" autoplay loop muted playsinline>
+  <source src="media/video/sf2.mp4" type="video/mp4">
 </video>
 
 <div id="bgoverlay" class="overlayhidden">
-  <img src="media/video/scanlines.png" style="display: inline;">
+  <img src="media/video/scanlines.png" alt="scanlines">
 </div>
 
 <iframe src="media/music/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
 
-<audio autoplay loop controls>
+<audio autoplay loop class="fixed-bottom">
   <source src="media/music/arcadeambient.mp3" type="audio/mp3">
 </audio>
 <!--end background video-->

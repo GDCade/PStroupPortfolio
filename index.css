@@ -17,22 +17,27 @@
 	font-style: normal;
 }
 
+.card {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .setverdana{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #bgvid, #bgvid_preload, #bgoverlay {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
     opacity: 0.3;
-	transform: translateX(-50%) translateY(-50%);
-	background-size: cover;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
 }
 
 #bgoverlay {
@@ -41,14 +46,18 @@
 	background-size:auto;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.adjust{
+
+.adjust {
     margin: auto;
-    width: 90%;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
 }
 
 .icon{
@@ -57,42 +66,60 @@
     margin-top: -10px;
 }
 
-.bratbutton{
-    height: 20px;
-    margin-left: 1500px;
-    margin-top: -10px;
+.bratbutton {
+    height: auto;
+    max-height: 20px;
+    margin-left: auto;
+    margin-top: 0;
 }
 
-.centertext{
-    width: 1200px;
-    max-width: 95%;
+.centertext {
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 15px;
 }
 
-.centercontact{
-    width: 500px;
-    max-width: 95%;
+.centercontact {
+    width: 100%;
+    max-width: 500px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 0 15px;
 }
 
-.tabiconcontainer{
+.tabiconcontainer {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     padding: 10px;
-    border: solid 3px  #0084ff;
+    border: solid 3px #0084ff;
     border-radius: 0%;
-    background-color: rgba(255, 255, 255, 0.438);   
+    background-color: rgba(255, 255, 255, 0.438);
 }
 
-.tabicons{
+.containerBlack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     padding: 10px;
-    height: 100px;
-  }
+    border: solid 3px #727272;
+    border-radius: 0%;
+    background-color: rgba(19, 19, 19, 0.788);
+}
+
+.tabicons {
+    margin: 10px;
+    padding: 5px;
+    height: auto;
+    max-height: 100px;
+    width: auto;
+}
 
   .tabibreaker{
     display: flex;
@@ -118,18 +145,21 @@
       }
   }
 
-.tabimagewiggle{
+  .tabimagewiggle {
     animation: rotation 3s infinite;
     border-radius: 25%;
-    margin-left: 80px;
-    height: 400px;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    margin: 20px auto;
 }
 
-.projectpreviewimg{
+.projectpreviewimg {
     border-radius: 20%;
-    margin-left: 50px;
-    margin-top: 30px;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin: 20px auto;
 }
 
 .casestudycard{
@@ -139,4 +169,102 @@
 .main-content .case-blocks{
     padding-top: 30px;
     padding-bottom: 9rem;
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.4em;
+    }
+    
+    .tabs a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    
+    .tabimagewiggle {
+        margin-left: 0;
+    }
+    
+    .projectpreviewimg {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tabs a {
+        padding: 8px;
+        font-size: 0.85em;
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .tabiconcontainer {
+        flex-wrap: wrap;
+    }
+    
+    .tabicons {
+        max-height: 60px;
+    }
+    
+    .tabimagewiggle {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    .tabs a {
+        padding: 6px;
+        font-size: 0.8em;
+    }
+    
+    .icon {
+        max-height: 40px;
+    }
+    
+    .bratbutton {
+        max-height: 15px;
+    }
+    
+    .centertext, .centercontact {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .tabiconcontainer {
+        padding: 5px;
+    }
+    
+    .tabicons {
+        max-height: 50px;
+        margin: 5px;
+    }
 }
